@@ -34,7 +34,7 @@ Usage:
     {% endif %}
   
     <li class="collection-item">
-        <i class="fa fa-file-text-o"></i><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+        <i class="fa fa-file-text-o"></i> <span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
     </li>
   
     {% if forloop.last %}
@@ -49,7 +49,7 @@ Usage:
         {% if this_month != next_month %}
           </ul>
           <!-- <h3>{{next_month}}</h3> -->
-          <ul>
+          <ul class="collection">
         {% endif %}
       {% endif %}
     {% endif %}
