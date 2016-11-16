@@ -4,10 +4,19 @@
     {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}
 </h1>
 
-<p>
+<!-- =========== DATE and CATEGORIES =============== -->
+<div>
     <i class="fa fa-calendar"></i> 
     {{ page.date | date_to_long_string }}
-</p>
+{% unless page.categories == empty %}
+    <ul class="tag_box inline">
+        <li><i class="fa fa-file-text-o"></i></li>
+        {% assign categories_list = page.categories %}
+        {% include JB/categories_list %}
+    </ul>
+{% endunless %}  
+</div>
+
 
 <!-- =========== CONTENT =============== -->
 <div>
@@ -21,18 +30,6 @@
     {% include JB/tags_list %}
 {% endunless %}  
 </div>
-
-<!-- =========== CATEGORIES =============== -->
-<div>
-{% unless page.categories == empty %}
-    <ul class="tag_box inline">
-        <li><i class="icon-folder-open"></i></li>
-        {% assign categories_list = page.categories %}
-        {% include JB/categories_list %}
-    </ul>
-{% endunless %}  
-</div>
-
 
 
 <hr>
