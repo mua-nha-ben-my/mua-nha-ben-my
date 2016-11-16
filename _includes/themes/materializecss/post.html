@@ -7,7 +7,7 @@
 <!-- =========== DATE and CATEGORIES =============== -->
 <div>
 {% unless page.categories == empty %}
-    <ul class="tag_box inline">
+    <ul style="list-style-type: none;">
         <li>
             <i class="fa fa-calendar"></i> 
             {{ page.date | date_to_long_string }}    
