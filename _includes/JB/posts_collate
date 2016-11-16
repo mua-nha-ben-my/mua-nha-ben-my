@@ -30,7 +30,7 @@ Usage:
       <h2>{{this_year}}</h2>
       
       <ul class="collapsible" data-collapsible="accordion">
-      <h3>{{this_month}}</h3>
+      <!-- <h3>{{this_month}}</h3> -->
     {% endif %}
   
     <li>
@@ -43,7 +43,7 @@ Usage:
       {% if this_year != next_year %}
         </ul>
         <h2>{{next_year}}</h2>
-        <h3>{{next_month}}</h3>
+        <!-- <h3>{{next_month}}</h3> -->
         <ul>
       {% else %}    
         {% if this_month != next_month %}
