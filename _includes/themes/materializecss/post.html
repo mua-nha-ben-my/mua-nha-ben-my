@@ -17,10 +17,8 @@
 <!-- =========== TAGS =============== -->
 <div>
 {% unless page.tags == empty %}
-    <div class="chip">
-        {% assign tags_list = page.tags %}
-        {% include JB/tags_list %}
-    </div>
+    {% assign tags_list = page.tags %}
+    {% include JB/tags_list %}
 {% endunless %}  
 </div>
 
