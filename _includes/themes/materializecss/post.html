@@ -1,3 +1,4 @@
+<!-- =========== HEADING =============== -->
 <h1>
     {{ page.title }} 
     {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}
@@ -8,27 +9,35 @@
     {{ page.date | date_to_long_string }}
 </p>
 
+<!-- =========== CONTENT =============== -->
 <div>
     {{ content }}
 </div>
 
-  {% unless page.categories == empty %}
-    <ul class="tag_box inline">
-      <li><i class="icon-folder-open"></i></li>
-      {% assign categories_list = page.categories %}
-      {% include JB/categories_list %}
-    </ul>
-  {% endunless %}  
+<!-- =========== TAGS =============== -->
+<div>
+{% unless page.tags == empty %}
+    <div class="chip">
+        {% assign tags_list = page.tags %}
+        {% include JB/tags_list %}
+    </div>
+{% endunless %}  
+</div>
 
-  {% unless page.tags == empty %}
+<!-- =========== CATEGORIES =============== -->
+<div>
+{% unless page.categories == empty %}
     <ul class="tag_box inline">
-      <li><i class="icon-tags"></i></li>
-      {% assign tags_list = page.tags %}
-      {% include JB/tags_list %}
+        <li><i class="icon-folder-open"></i></li>
+        {% assign categories_list = page.categories %}
+        {% include JB/categories_list %}
     </ul>
-  {% endunless %}  
+{% endunless %}  
+</div>
 
-    <hr>
+
+
+<hr>
     <div class="pagination">
       <ul>
       {% if page.previous %}
