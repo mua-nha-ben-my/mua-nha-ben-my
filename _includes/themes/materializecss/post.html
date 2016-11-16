@@ -6,11 +6,12 @@
 
 <!-- =========== DATE and CATEGORIES =============== -->
 <div>
-    <i class="fa fa-calendar"></i> 
-    {{ page.date | date_to_long_string }}
 {% unless page.categories == empty %}
     <ul class="tag_box inline">
-        <li><i class="fa fa-file-text-o"></i></li>
+        <li>
+            <i class="fa fa-calendar"></i> 
+            {{ page.date | date_to_long_string }}    
+        </li>
         {% assign categories_list = page.categories %}
         {% include JB/categories_list %}
     </ul>
@@ -31,24 +32,24 @@
 {% endunless %}  
 </div>
 
-
+<div style="margin-top: 40px"></div>
 <hr>
-    <div class="pagination">
-      <ul>
+    <ul class="pagination">
       {% if page.previous %}
         <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
       {% else %}
         <li class="prev disabled"><a>&larr; Previous</a></li>
       {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Posts</a></li>
       {% if page.next %}
         <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
       {% else %}
         <li class="next disabled"><a>Next &rarr;</a>
       {% endif %}
-      </ul>
-    </div>
-    <hr>
-    {% include JB/comments %}
-  </div>
+    </ul>
+<hr>
+
+
+{% include JB/comments %}
+</div>
 </div>
