@@ -45,13 +45,17 @@ Usage:
   
     {% if forloop.last %}
       </ul>
+      
       </div>
       </li>
+      </ul>
     {% else %}
       {% if this_year != next_year %}
         </ul>
+        
         </div>
         </li>
+        </ul>
 
         <ul class="collapsible popout" data-collapsible="accordion">
         <li>
@@ -65,7 +69,7 @@ Usage:
           </ul>
           </div>
           </li>
-          
+
           <!-- <h3>{{next_month}}</h3> -->
           <ul class="collection">
         {% endif %}
