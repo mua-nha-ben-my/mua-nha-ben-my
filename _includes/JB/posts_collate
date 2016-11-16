@@ -29,15 +29,12 @@ Usage:
     {% if forloop.first %}
       <h2>{{this_year}}</h2>
       
-      <ul class="collapsible" data-collapsible="accordion">
+      <ul class="collection">
       <!-- <h3>{{this_month}}</h3> -->
     {% endif %}
   
-    <li>
-        <div class="collapsible-header">First</div>
-        <div class="collapsible-body"><i class="material-icons">filter_drama</i>First</div>
-
-      <span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+    <li class="collection-item">
+        <span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}
     </li>
   
     {% if forloop.last %}
@@ -47,11 +44,11 @@ Usage:
         </ul>
         <h2>{{next_year}}</h2>
         <!-- <h3>{{next_month}}</h3> -->
-        <ul>
+        <ul class="collection">
       {% else %}    
         {% if this_month != next_month %}
           </ul>
-          <h3>{{next_month}}</h3>
+          <!-- <h3>{{next_month}}</h3> -->
           <ul>
         {% endif %}
       {% endif %}
