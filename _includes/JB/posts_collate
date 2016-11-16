@@ -27,7 +27,13 @@ Usage:
     {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
   
     {% if forloop.first %}
-      <h2>{{this_year}}</h2>
+      <ul class="collapsible popout" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header">
+          <h2>{{this_year}}</h2>
+        </div>  
+        <div class="collapsible-body">
+        
       
       <ul class="collection">
       <!-- <h3>{{this_month}}</h3> -->
@@ -39,9 +45,11 @@ Usage:
   
     {% if forloop.last %}
       </ul>
+      </div>
     {% else %}
       {% if this_year != next_year %}
         </ul>
+        </div>
         <h2>{{next_year}}</h2>
         <!-- <h3>{{next_month}}</h3> -->
         <ul class="collection">
