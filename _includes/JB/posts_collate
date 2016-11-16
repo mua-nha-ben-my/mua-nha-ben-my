@@ -27,51 +27,26 @@ Usage:
     {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
   
     {% if forloop.first %}
-      <ul class="collapsible popout" data-collapsible="accordion">
-      <li>
-        <div class="collapsible-header">
-          <h2>{{this_year}}</h2>
-        </div>  
-        <div class="collapsible-body">
-        
-      
-      <ul class="collection">
-      <!-- <h3>{{this_month}}</h3> -->
+      <h2>{{this_year}}</h2>
+      <h3>{{this_month}}</h3>
+      <ul>
     {% endif %}
   
-    <li class="collection-item">
-        <i class="fa fa-file-text-o"></i> <span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-    </li>
+    <li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   
     {% if forloop.last %}
-      </ul>
-      
-      </div>
-      </li>
       </ul>
     {% else %}
       {% if this_year != next_year %}
         </ul>
-        
-        </div>
-        </li>
-        </ul>
-
-        <ul class="collapsible popout" data-collapsible="accordion">
-        <li>
-        <div class="collapsible-header">
-          <h2>{{next_year}}</h2>
-        </div>
-        <!-- <h3>{{next_month}}</h3> -->
-        <ul class="collection">
+        <h2>{{next_year}}</h2>
+        <h3>{{next_month}}</h3>
+        <ul>
       {% else %}    
         {% if this_month != next_month %}
           </ul>
-          </div>
-          </li>
-
-          <!-- <h3>{{next_month}}</h3> -->
-          <ul class="collection">
+          <h3>{{next_month}}</h3>
+          <ul>
         {% endif %}
       {% endif %}
     {% endif %}
