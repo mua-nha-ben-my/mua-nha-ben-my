@@ -152,6 +152,7 @@ function styleControls(){
     });
 
     $('ul.tabs').tabs();
+    $('.collapsible').collapsible();
 
     $('.modal-trigger').leanModal({
         dismissible: false, // Modal can be dismissed by clicking outside of the modal
