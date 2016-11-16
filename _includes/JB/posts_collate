@@ -34,6 +34,9 @@ Usage:
     {% endif %}
   
     <li>
+        <div class="collapsible-header">First</div>
+        <div class="collapsible-body"><i class="material-icons">filter_drama</i>First</div>
+
       <span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
     </li>
   
