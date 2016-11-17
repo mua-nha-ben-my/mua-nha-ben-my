@@ -1,7 +1,7 @@
 var URL = "/marketing-online-hieu-qua"; //-- EDIT here 
-var FB_APP_ID = "123";
-var GOOGLE_ANALYTIC_ID = "UA-11";
-var KEYWORDS = "marketing online hieu qua";
+var facebookAppId = "123";
+var googleAnalyticId = "UA-11";
+var keywords = "marketing online hieu qua";
 
 var colors = [
     "red","blue","green","orange",  // 0 1 2 3  
@@ -15,7 +15,7 @@ var colors = [
 
 colors = ['green', 'deep-purple']
 var i = Math.floor( Math.random() * (colors.length - 0) + 0 );
-var COLOR = colors[i].toString();
+var chooseColor = colors[i].toString();
 
 
 
