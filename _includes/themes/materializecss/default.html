@@ -29,13 +29,17 @@
                 <li><a href="media.html"><i style="font-size:160%" class="fa fa-television"></i></a></li> -->
                 <li><a href="#modal" class="modal-trigger"><i style="font-size:160%" class="fa fa-envelope-o"></i></a></li>
             </ul>
-            <ul class="right">
-                {% assign pages_list = site.pages %}
-                {% assign group = 'navigation' %}
+            
+            {% assign pages_list = site.pages %}
+            {% assign group = 'navigation' %}
+            <ul class="right hide-on-med-and-down">
                 {% include JB/pages_list %}
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
             <!-- === NAVBAR for mobile (duplicate and hide) ==== -->
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content">
                 {% include JB/pages_list %}
             </ul>
         </div>  
