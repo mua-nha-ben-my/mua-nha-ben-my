@@ -1,7 +1,7 @@
-var URL = "/marketing-online-hieu-qua"; //-- EDIT here 
+var URL = "/mua-nha-ben-my"; //-- EDIT here 
 var facebookAppId = "123";
 var googleAnalyticId = "UA-11";
-var keywords = "marketing online hieu qua";
+var keywords = "mua nha ben my";
 
 var colors = [
     "red","blue","green","orange",  // 0 1 2 3  
