@@ -86,7 +86,7 @@ function styleControls(){
         // complete: function() { alert('Closed'); } // Callback for Modal close
     });
 
-    $("#your-fb.fb-comments").attr('data-href', Page.url); //set truoc
+    // $("#your-fb.fb-comments").attr('data-href', URL); //set truoc
     $("span#current-color").html(chooseColor.toUpperCase());
 }
 
