@@ -21,7 +21,7 @@ var chooseColor = colors[i].toString();
 
 
 var cssfiles = [
-    'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css',
@@ -32,8 +32,7 @@ var cssfiles = [
 ];
 var jsfiles = [ 
     'https://code.jquery.com/jquery-2.2.4.min.js',
-    'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js',
-    'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.5.0/featherlight.min.js',
     URL+'/assets/themes/materializecss/jquery.waypoints.min.js', //-- scroll to view
