@@ -9,7 +9,6 @@ function initAll(){
 
     setColor(COLOR);
     styleControls();
-    setText();
 
     animateToView(".tada","tada");
     animateToView(".lightSpeedIn","lightSpeedIn");
@@ -24,57 +23,7 @@ function initAll(){
     initGoogleAnalytic(GOOGLE_ANALYTIC_ID);
     setKeyword(KEYWORDS);
 }
-//-----------------------------------------------------------------
-function setText(){
-    //======== Page ===============//
-    if (Page.logoText)
-        $(".logo-text").html(Page.logoText);
-    if (Page.subHeading)
-        $("h2.sub-heading").html(Page.subHeading);
-    if (Page.mainHeading)
-        $("h1.main-heading").html(Page.mainHeading);
-    if (Page.CTA)
-        $(".cta").html(Page.CTA);
-    if (Page.brief)
-        $(".brief").html(Page.brief);
-    if (Page.formId)
-        $("iframe").attr("src",Page.formId);
-    //========Social ===============//
-    if (Social.email)
-        $("a.email").attr("href",Social.email);
-    if (Social.facebook)
-        $("a.facebook").attr("href",Social.facebook);
-    if (Social.twitter)
-        $("a.twitter").attr("href",Social.twitter);
-    if (Social.google)
-        $("a.google").attr("href",Social.google);
-    //========Personal ===============//
-    if (Person.logoText)
-        $(".per-logo-text").html(Person.logoText);
-    if (Person.fullname)
-        $("h1.fullname, li.fullname, a.fullname").html(Person.fullname);
-    if (Person.slogan)
-        $("span.slogan").html(Person.slogan);
-    if (Person.sex)
-        $("span.sex").html(Person.sex);
-    if (Person.phone)
-        $("a.phone, li.phone").attr("href",Person.phone);
-    if (Person.facebook)
-        $("a.facebook").attr("href",Person.facebook);
-    if (Person.google)
-        $("a.google").attr("href",Person.google);
-    if (Person.twitter)
-        $("a.twitter").attr("href",Person.twitter);
-    if (Person.linkedin)
-        $("a.linkedin").attr("href",Person.linkedin);
-    if (Person.instagram)
-        $("a.instagram").attr("href",Person.instagram);
-    if (Person.pinterest)
-        $("a.pinterest").attr("href",Person.pinterest);
-    if (Person.message)
-        $(".message").html(Person.message);
-    
-}
+
 
 function setColor(COLOR){
     $("body").addClass(COLOR + " lighten-5");
