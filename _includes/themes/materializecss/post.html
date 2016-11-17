@@ -24,6 +24,9 @@
     {{ content }}
 </div>
 
+{% include share_buttons.html url=page.url title=page.title %}
+
+
 <!-- =========== TAGS =============== -->
 <div>
 {% unless page.tags == empty %}
@@ -31,6 +34,8 @@
     {% include JB/tags_list %}
 {% endunless %}  
 </div>
+
+
 
 <!-- =========== PAGING =============== -->
 <div style="margin-top: 40px"></div>
