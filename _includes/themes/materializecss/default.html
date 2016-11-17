@@ -34,11 +34,14 @@
             {% assign group = 'navigation' %}
             <ul class="right hide-on-med-and-down">
                 {% include JB/pages_list %}
-                <!-- Dropdown Trigger -->
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+                
             </ul>
             <!-- === NAVBAR for mobile (duplicate and hide) ==== -->
             <!-- Dropdown Structure -->
+            <ul class="right show-on-med-and-down">
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>        
+            </ul>
             <ul id="dropdown1" class="dropdown-content">
                 {% include JB/pages_list %}
             </ul>
