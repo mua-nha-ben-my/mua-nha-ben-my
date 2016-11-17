@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bài viết đàng hoàng của tôi"
+title: "Bài viết sử dụng markdown"
 category : advertising
 tagline: "(P.1)"
 tags : [video, ads, online, marketing]
@@ -8,7 +8,7 @@ tags : [video, ads, online, marketing]
 
 {% include JB/setup %}
 
-## Heading
+## Markdown
 
 Khi không có kẻ thật lâu đứng nhìn 
 Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg 
@@ -22,6 +22,7 @@ Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum k
 
 <!-- must have 2 link to trust site -->
 Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg [keyword](http://wikipedia.org/keyword) Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg  
+
 
 
 
