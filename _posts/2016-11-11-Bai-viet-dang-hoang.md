@@ -10,7 +10,11 @@ tags : [video, ads, online, marketing]
 
 ### Heading
 
+Khi không có kẻ thật lâu đứng nhìn 
 Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg 
 
 Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg 
 
+![Hình ảnh](https://octodex.github.com/images/yaktocat.png)
+
+Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg Lorem ispsum kaka hungyr kjiongg 
