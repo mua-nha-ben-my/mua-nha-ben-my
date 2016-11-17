@@ -28,14 +28,15 @@
                 <!-- <li><a href="chat.html"><i style="font-size:160%" class="fa fa-comments"></i></a></li>
                 <li><a href="media.html"><i style="font-size:160%" class="fa fa-television"></i></a></li> -->
                 <li><a href="#modal" class="modal-trigger"><i style="font-size:160%" class="fa fa-envelope-o"></i></a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="fa fa-list-ul"></i> Menu</a></li>
             </ul>
             
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             <ul class="right hide-on-med-and-down">
                 {% include JB/pages_list %}
-                <!-- Dropdown Trigger -->
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="fa fa-list-ul"></i> Menu</a></li>        
+                        
             </ul>
             <!-- === NAVBAR for mobile (duplicate and hide) ==== -->
             <ul id="dropdown1" class="dropdown-content">
