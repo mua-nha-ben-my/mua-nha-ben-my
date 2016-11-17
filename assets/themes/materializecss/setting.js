@@ -1,4 +1,24 @@
 var URL = "/marketing-online-hieu-qua"; //-- EDIT here 
+var FB_APP_ID = "123";
+var GOOGLE_ANALYTIC_ID = "UA-11";
+var KEYWORDS = "marketing online hieu qua";
+
+var colors = [
+    "red","blue","green","orange",  // 0 1 2 3  
+    "pink", "purple", "light-blue", "cyan", // 4 5 6 7  
+    // "deep-purple", "indigo", "teal", "lime", // 8 9 10 11
+    "deep-purple", "indigo", "teal", // 8 9 10 11
+    // "light-green", "yellow", "amber", "deep-orange", // 12 13 14 15
+    "light-green", "yellow", "deep-orange", // 12 13 14 15
+    // "brown", "grey", "blue-grey"      // 16 17 18 19
+];
+
+colors = ['green', 'deep-purple']
+var i = Math.floor( Math.random() * (colors.length - 0) + 0 );
+var COLOR = colors[i].toString();
+
+
+
 
 var cssfiles = [
     'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css',
@@ -29,20 +49,5 @@ function loadAll(){
         });
     });   
 }
-
-
-var colors = [
-    "red","blue","green","orange",  // 0 1 2 3  
-    "pink", "purple", "light-blue", "cyan", // 4 5 6 7  
-    // "deep-purple", "indigo", "teal", "lime", // 8 9 10 11
-    "deep-purple", "indigo", "teal", // 8 9 10 11
-    // "light-green", "yellow", "amber", "deep-orange", // 12 13 14 15
-    "light-green", "yellow", "deep-orange", // 12 13 14 15
-    // "brown", "grey", "blue-grey"      // 16 17 18 19
-];
-
-colors = ['green', 'deep-purple']
-var i = Math.floor( Math.random() * (colors.length - 0) + 0 );
-var chooseColor = colors[i].toString();
 
 

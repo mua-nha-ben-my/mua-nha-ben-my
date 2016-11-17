@@ -2,10 +2,10 @@
    
 function initAll(){
     // from setting
-    var COLOR = chooseColor; 
-    var FB_APP_ID = Page.facebookAppId;
-    var GOOGLE_ANALYTIC_ID = Page.GoogleAnalyticId;
-    var KEYWORDS = Page.longKeyWords;
+    // var COLOR = chooseColor; 
+    // var FB_APP_ID = Page.facebookAppId;
+    // var GOOGLE_ANALYTIC_ID = Page.GoogleAnalyticId;
+    // var KEYWORDS = Page.longKeyWords;
 
     setColor(COLOR);
     styleControls();
