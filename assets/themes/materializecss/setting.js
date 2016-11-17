@@ -1,31 +1,35 @@
-// ============= HOME ==============
-var Page = {
-    //-- de trong "" de giu nguyen default text
-    logoText: "",
-    subHeading: "",
-    mainHeading: "",
-    CTA: "",
-    brief: "",
-    // ============= VARS ==============
-    url : "", //-- co slash cuoi /
-    mainkeyWord : "",
-    longkeyWords : [""],
-    facebookAppId : "303370230021409", //-- your appID
-    googleAnalyticId : "UA-82197343-2", //-- your id
-    //formId: "https://docs.google.com/forms/d/e/1FAIpQLScjBXL-M0eRB0qhX1xSV5sWWAwsXbNqtjAGm3aq0-l5EZAisg/viewform?embedded=true",
-    formId: ""
+var URL = "/marketing-online-hieu-qua"; //-- EDIT here 
+
+var cssfiles = [
+    'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.5.0/featherlight.min.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css',
+    URL+'/assets/themes/materializecss/style.css'
+
+];
+var jsfiles = [ 
+    'https://code.jquery.com/jquery-2.2.4.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.5.0/featherlight.min.js',
+    URL+'/assets/themes/materializecss/jquery.waypoints.min.js', //-- scroll to view
+    URL+'/assets/themes/materializecss/inview.min.js',  //-- scroll to view
+    // 'assets/index.js', 
+];
+
+function loadAll(){
+    LazyLoad.css(cssfiles, function(){});
+    LazyLoad.js(jsfiles, function(){
+        $(document).ready(function(){
+            initAll();
+        });
+    });   
 }
 
-var Social = {
-    //-- de trong "" de giu nguyen default text
-    email: "maito:",
-    facebook: "1",
-    twitter: "2",
-    google: "3",
-    instagram: "3",
-    pinterest: "0",
-    linkedin: "0"
-}
 
 var colors = [
     "red","blue","green","orange",  // 0 1 2 3  
@@ -37,38 +41,8 @@ var colors = [
     // "brown", "grey", "blue-grey"      // 16 17 18 19
 ];
 
-// colors = ['green', 'deep-purple']
+colors = ['green', 'deep-purple']
 var i = Math.floor( Math.random() * (colors.length - 0) + 0 );
 var chooseColor = colors[i].toString();
 
 
-// ============= PERSONAL ==============
-var Person = {
-    //-- de trong "" de giu nguyen default text
-    logoText: "Nguyễn Công Vũ",
-    fullname: "<strong>Nguyễn Công Vũ</strong>.",
-    slogan: "Unique. Sports. Professionals",
-    sex: '<i class="fa fa-male"></i>', //-- male, female
-    phone: 'tel:0937980003',
-    // message: "Tôi đã sẵn sàng, còn bạn thì sao?", //-- thong diep chinh hien nay!
-    message: "",
-    
-    facebook: 'https://facebook.com/nguyencongvu',
-    twitter: "2",
-    google: "3",
-    instagram: "3",
-    pinterest: "0",
-    linkedin: "0",
-    google: "g",
-    CTA: "Tôi muốn có ngay Landing Page",
-
-}
-
-
-var Social = {
-
-}
-
-
-
-    
